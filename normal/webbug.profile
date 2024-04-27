@@ -3,6 +3,13 @@
 #
 # Author: @armitagehacker
 
+stage {
+        set userwx "false";
+        set cleanup "true";
+        set obfuscate "true";
+        set module_x64 "xpsservices.dll";
+}
+
 http-get {
 	set uri "/__utm.gif";
 	client {
