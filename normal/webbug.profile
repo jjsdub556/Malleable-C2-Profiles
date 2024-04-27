@@ -10,6 +10,10 @@ stage {
         set module_x64 "xpsservices.dll";
 }
 
+post-ex {
+        set amsi_disable "true";
+}
+
 http-get {
 	set uri "/__utm.gif";
 	client {
