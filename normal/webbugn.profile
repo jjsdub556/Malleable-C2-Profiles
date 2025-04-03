@@ -6,6 +6,23 @@
 set sleeptime "1";
 set tasks_max_size "2097152";
 
+dns-beacon {
+    set dns_idle             "8.8.8.8";
+    set dns_max_txt          "220";
+    set dns_sleep            "0";
+    set dns_ttl              "1";
+    set maxdns               "255";
+    set dns_stager_prepend   ".wwwds.";
+    set dns_stager_subhost   ".e2867.dsca.";
+    set beacon               "d-bx.";
+    set get_A                "d-1ax.";
+    set get_AAAA             "d-4ax.";
+    set get_TXT              "d-1tx.";
+    set put_metadata         "d-1mx";
+    set put_output           "d-1ox.";
+    set ns_response          "zero";
+}
+
 stage {
         set userwx "false";
         set cleanup "true";
